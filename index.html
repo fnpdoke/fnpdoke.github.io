@@ -1,11 +1,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <style>
 body {
-    counter-reset:c;
+    counter-reset: c;
 }
 p::before {
-    counter-increment:cnt;
-    content:counter(c)". ";
+    counter-increment: c;
+    content: counter(c)". ";
+    width: 2em;
+    display: inline-block;
 }
 p {
     width: 15em;
