@@ -10,15 +10,13 @@ p {
 }
 </style>
 <script>
-function wo() {
+function wo(x) {
     [...document.getElementsByTagName('a')].forEach(function(e) { 
-        if(e.innerText.indexOf('✅') < 0) {
-            window.open(e.getAttribute("href"));
-        }
+        if(e.innerText.indexOf('✅') + x) window.open(e.getAttribute("href"));
     });
 }
 </script>
-<input type="button" onclick="wo()" value="OPEN">
+<input type="button" onclick="wo(0)" value="OPEN 0"> <input type="button" onclick="wo(1)" value="OPEN 1">
 
 <p><a href="https://reurl.cc/7DL2j1">🆕 0612 夯話題 全民大搜查 17</a></p>
 <p><a href="https://reurl.cc/yr4ymq">🆕 0612 夯話題 夾夾樂 抽獎</a></p>
