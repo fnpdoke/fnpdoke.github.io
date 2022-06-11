@@ -13,9 +13,9 @@ p {
 function wo() {
     [...document.getElementsByTagName('a')].forEach(function(e) { 
         if(e.innerText.indexOf('✅') < 0) {
-			window.open(e.getAttribute("href"));
-		}
-	});
+            window.open(e.getAttribute("href"));
+        }
+    });
 }
 </script>
 <input type="button" onclick="wo()" value="open">
