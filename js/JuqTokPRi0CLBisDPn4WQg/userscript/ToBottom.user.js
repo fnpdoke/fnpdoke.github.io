@@ -4,7 +4,7 @@
 // @version      20220806
 // @description  ToBottom
 // @author       fpdk
-// @match        https://www.ptt.cc/bbs/Lifeismoney/M.1659635646.A.6F4.html
+// @match        https://www.ptt.cc/bbs/Lifeismoney/M.1662179399.A.251.html
 // @grant        none
 // ==/UserScript==
 
