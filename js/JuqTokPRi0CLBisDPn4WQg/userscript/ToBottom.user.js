@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         ToBottom
 // @namespace    fpdk
-// @version      20220925
+// @version      20221015
 // @description  ToBottom
 // @author       fpdk
-// @match        https://www.ptt.cc/bbs/Lifeismoney/M.1664081264.A.05C.html
+// @match        https://www.ptt.cc/bbs/Lifeismoney/M.1665778630.A.71A.html
 // @grant        none
 // ==/UserScript==
 
