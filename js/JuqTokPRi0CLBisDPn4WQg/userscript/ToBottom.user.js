@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ToBottom
 // @namespace    fpdk
-// @version      20221015
+// @version      20221105
 // @description  ToBottom
 // @author       fpdk
 // @match        https://www.ptt.cc/bbs/Lifeismoney/M.1667497798.A.088.html
