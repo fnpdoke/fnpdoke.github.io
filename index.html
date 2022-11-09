@@ -12,41 +12,58 @@ b {
     text-align: right;
 }
 </style>
-<input type="button" value="集　章" onclick="document.querySelectorAll('p a').forEach(e => e.click())">
-<input type="button" value="任務卡" onclick="document.querySelectorAll('b a').forEach(e => e.click())">
+
+<script>
+let delay = () => {
+    return new Promise((resolve, reject) => { setTimeout(resolve, 1500); });
+};
+
+async function p() {
+    let win = window.open('', 'p', 'width=100, height=100');
+    let list = document.querySelectorAll('p a');
+    let len = list.length;
+    let cnt = 1;
+    for(let item of list) {
+        win.location.href = item.getAttribute("href");
+        await delay();
+        cnt++;
+        if (cnt > len) {
+            win.close();
+            b();
+        }
+    }
+}
+
+let b = () => {
+    document.querySelectorAll('b a').forEach(e => e.click())
+}
+</script>
+<input type="button" value="集　章" onclick="p()">
+<input type="button" value="任務卡" onclick="b()">
 <hr>
 
 <p><a target=_blank href=https://reurl.cc/AynKEY>🆕 10/26~11/28 Line 禮物 機會等你搜</a></p>
-<p><a target=_blank href=https://reurl.cc/10o1rV>🆕 1108 LINE 購物 雙11盛典 抽獎</a></p>
-<p><a target=_blank href=https://reurl.cc/KXr0Vg>🆕 1108 LINE 購物 天天都來購 抽獎</a></p>
-<p><a target=_blank href=https://reurl.cc/LX7A9y>🆕 1108 LINE 購物 一百種購物方式 抽獎</a></p>
-<p><a target=_blank href=https://reurl.cc/KXr0mq>🆕 1108 LINE 夯話題 購物專家</a></p>
-<p><a target=_blank href=https://reurl.cc/gQWY7p>🆕 1106 LINE 夯話題 清單 抽獎</a></p>
+<p><a target=_blank href=https://reurl.cc/aaNW6G>🆕 1109 LINE 購物 雙11盛典 抽獎</a></p>
+<p><a target=_blank href=https://reurl.cc/lZ5x3v>🆕 1109 LINE 購物 天天都來購 抽獎</a></p>
+<p><a target=_blank href=https://reurl.cc/pZxkQr>🆕 1109 LINE 購物 一百種購物方式 抽獎</a></p>
+<p><a target=_blank href=https://reurl.cc/EXZ931>🆕 1109 LINE 夯話題 購物專家</a></p>
 <p><a target=_blank href=https://reurl.cc/X5lEdg>🆕 1107-1109 LINE 夯話題 超品日</a></p>
-<p><a target=_blank href=https://reurl.cc/oZx7nq>🆕 1108 LINE 夯話題 扭蛋</a></p>
-<p><a target=_blank href=https://reurl.cc/jRgDNp>🆕 1108 LINE 夯話題 秋冬購有趣</a></p>
-<p><a target=_blank href=https://reurl.cc/10o1DV>🆕 1108 LINE購物品牌名店 超品日</a></p>
-<p><a target=_blank href=https://reurl.cc/5821ez>🆕 1108 LINE購物品牌名店 天天給你大爆賺 抽獎</a></p>
-<p><a target=_blank href=https://reurl.cc/06x1Lb>🆕 1108 LINE購物品牌名店 大哉問 抽獎</a></p>
-<p><a target=_blank href=https://reurl.cc/dexDRg>🆕 1108 LINE購物品牌名店 裝滿購物車 抽獎</a></p>
-<p><a target=_blank href=https://reurl.cc/rZ15p4>1. 品牌名店 集集 2/3 （3兌換）</a></p>
-<b><a target=_blank href=https://liff.line.me/1529013389-VDr0PLo1/collectcard/ugBFIDeyMxcoCaY7HaaGgXicpCuGwBeysUaoie5LdsK84KtHoAa74r6ILOWf-zetOS5S4b2An_l30MClYv4ZRw>✅ 品牌名店 集集復集集 任務確認卡</a></b>
-<p><a target=_blank href=https://reurl.cc/X5lEv7>2-1. Line 購物 狂購大作戰 15/22 (7、14、22兌換)</a></p>
-<p><a target=_blank href=https://reurl.cc/DXZAWR>2-2. Line 購物 狂購大作戰 16/22 (7、14、22兌換)</a></p>
+<p><a target=_blank href=https://reurl.cc/WqX25x>🆕 1109 LINE 夯話題 扭蛋</a></p>
+<p><a target=_blank href=https://reurl.cc/eWmNeL>🆕 1109 LINE 夯話題 塔羅牌</a></p>
+<p><a target=_blank href=https://reurl.cc/915lEv>🆕 1109 LINE購物品牌名店 超品日</a></p>
+<p><a target=_blank href=https://reurl.cc/MXkevX>🆕 1109 LINE購物品牌名店 天天給你大爆賺 抽獎</a></p>
+<p><a target=_blank href=https://reurl.cc/VR596N>🆕 1109 LINE購物品牌名店 大哉問 抽獎</a></p>
+<p><a target=_blank href=https://reurl.cc/NGZWjq>🆕 1109 LINE購物品牌名店 裝滿購物車 抽獎</a></p>
+<p><a target=_blank href=https://reurl.cc/Z1j6YV>2-1. Line 購物 狂購大作戰 17/22 (7、14、22兌換)</a></p>
+<p><a target=_blank href=https://reurl.cc/vmgZ9a>2-2. Line 購物 狂購大作戰 18/22 (7、14、22兌換)</a></p>
 <b><a target=_blank href=https://liff.line.me/1529013389-VDr0PLo1/collectcard/ugBFIDeyMxcoCaY7HaaGgUUKWaj3xCddVX8EgYXNpzaEmafeoR_oXAkQeXsh6UTZicpaf64_Gb2OVdrS-NrY7A>✅ Line 購物 狂購大作戰 任務確認卡</a></b>
-<p><a target=_blank href=https://reurl.cc/RO1d4e>3. 品牌名店 APP 簽到 8/11 (1、4、7、11兌換)</a></p>
+<p><a target=_blank href=https://reurl.cc/RO1d4e>3. 品牌名店 APP 簽到 9/11 (1、4、7、11兌換)</a></p>
 <b><a target=_blank href=https://liff.line.me/1529013389-VDr0PLo1/collectcard/ugBFIDeyMxcoCaY7HaaGgXicpCuGwBeysUaoie5LdsLe1WGNMmlhsst-g0c6GGccIhsbyUz2X4evihyd_S0OOA>✅ Line 品牌名店 APP 簽到 任務確認卡</a></b>
-<p><a target=_blank href=https://reurl.cc/6LD5WO>4-1. Line 品牌名店 陪你雙11購翻天 15/22 (2、10、22兌換)</a></p>
-<p><a target=_blank href=https://reurl.cc/AyRAxe>4-2. Line 品牌名店 陪你雙11購翻天 16/22 (2、10、22兌換)</a></p>
+<p><a target=_blank href=https://reurl.cc/qZ1Ed0>4-1. Line 品牌名店 陪你雙11購翻天 17/22 (2、10、22兌換)</a></p>
+<p><a target=_blank href=https://reurl.cc/RObN4z>4-2. Line 品牌名店 陪你雙11購翻天 18/22 (2、10、22兌換)</a></p>
 <b><a target=_blank href=https://liff.line.me/1529013389-VDr0PLo1/collectcard/ugBFIDeyMxcoCaY7HaaGgXicpCuGwBeysUaoie5LdsJgaRHgWq2tE1uhz82zXs_O-UJ6WBRfG0cMtgjqpMz1gg>✅ Line 品牌名店 陪你雙11購翻天 任務確認卡</a></b>
-<p><a target=_blank href=https://reurl.cc/DXZARE>6-1. Line 夯話題 耍廢貓 3/12 (6、12兌換)</a></p>
-<p><a target=_blank href=https://reurl.cc/LX7A8L>6-2. Line 夯話題 耍廢貓 4/12 (6、12兌換)</a></p>
+<p><a target=_blank href=https://reurl.cc/yme3x6>5. Line 購物 狂歡購物城 1/3 (3兌換)</a></p>
+<b><a target=_blank href=https://liff.line.me/1529013389-VDr0PLo1/collectcard/ugBFIDeyMxcoCaY7HaaGgUUKWaj3xCddVX8EgYXNpzaZir9pixjUvqN8czJ3uU_BSRmBBpubc6-pvigtInhlLA>✅ Line 購物 狂歡購物城 任務確認卡</a></b>
+<p><a target=_blank href=https://reurl.cc/QW6vy5>6-1. Line 夯話題 耍廢貓 5/12 (6、12兌換)</a></p>
+<p><a target=_blank href=https://reurl.cc/OEkylr>6-2. Line 夯話題 耍廢貓 6/12 (6、12兌換)</a></p>
 <b><a target=_blank href=https://liff.line.me/1529013389-VDr0PLo1/collectcard/Jm_wM2BhSNX8_zMvqnMEbQQGplmz2aVq-gZ96uvhmRtoh_Tqp-2uyL47C-5Ds5rZ4YSInKnme1w0mSR_KFok1w>✅ Line 夯話題 耍廢貓 任務確認卡</a></b>
-<p><a target=_blank href=https://reurl.cc/gQzDON>8. Line 夯話題 魯肉飯 2/3 (3兌換)</a></p>
-<b><a target=_blank href=https://liff.line.me/1529013389-VDr0PLo1/collectcard/Jm_wM2BhSNX8_zMvqnMEbQQGplmz2aVq-gZ96uvhmRu7MEs2qS3oOO44sJN31KYY7PE4mypjAg6j8tV9pd-JEA>✅ Line 夯話題 魯肉飯 任務確認卡</a></b>
-<p><a target=_blank href=https://reurl.cc/gQzDLX>10. Line 購物 購物達人 2/3 (3兌換)</a></p>
-<b><a target=_blank href=https://liff.line.me/1529013389-VDr0PLo1/collectcard/ugBFIDeyMxcoCaY7HaaGgUUKWaj3xCddVX8EgYXNpzaiFhOj4GyfZ1Io7kfDAVdohC4r7jBGGsIMPafM1ne8JQ>✅ Line 購物 購物達人 任務確認卡</a></b>
-<p><a target=_blank href=https://reurl.cc/10o1d8>10. Line 夯話題 News 快閃報 2/3 (3兌換)</a></p>
-<b><a target=_blank href=https://liff.line.me/1529013389-VDr0PLo1/collectcard/Jm_wM2BhSNX8_zMvqnMEbQQGplmz2aVq-gZ96uvhmRsbjoja2BG_RNtgWLjyyOl6F4ppqodYzArs0-QizYP-YA>✅ Line News 快閃報 任務確認卡</a></b>
-<p><a target=_blank href=https://reurl.cc/RObyn9>11.Line旅遊11/07~11/12集章 2/6 (3、6兌換)</a></p>
-<b><a target=_blank href=https://liff.line.me/1529013389-VDr0PLo1/collectcard/Jm_wM2BhSNX8_zMvqnMEbXRPRcA4tqXwdExxp5S029gHuRKQNkeNmKMrIHOSMukFlAlTSZUhd7VpwVoZfZ9iHw>✅ Line 旅遊 任務確認卡</a></b>
