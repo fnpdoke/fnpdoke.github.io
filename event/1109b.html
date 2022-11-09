@@ -1,0 +1,61 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style>
+p {
+    counter-reset: num;
+}
+a {
+    display: block;
+    font-size: 20;
+}
+p a[href^=http]::before {
+    counter-increment: num; 
+    content: '連結 ' counter(num);
+}
+</style>
+<script>
+let delay = () => {
+    return new Promise((resolve, reject) => { setTimeout(resolve, 1500); });
+};
+
+async function p() {
+    let win = window.open('', 'p', 'width=100, height=100');
+    let list = document.querySelectorAll('p a:not([href=""])');
+    let len = list.length;
+    let cnt = 1;
+    for(let item of list) {
+        win.location.href = item.getAttribute("href");
+        await delay();
+        cnt++;
+        if (cnt > len) {
+            win.close();
+            alert('done');
+        }
+    }
+}
+</script>
+
+<input type="button" onclick="p()" value="OPEN">
+<hr>
+
+<a href="https://event.line.me/mgm/Jm_wM2BhSNX8_zMvqnMEbdzpxZThzZObuP285emXj9t97vY1rjdwgZrrH5RfI-UjHhhwL8WyC7zAl4Qg91AzGg">N次方慰勞祭 分享</a>
+<a href="https://liff.line.me/1529013389-QwZzgXDV/luckydraw/Jm_wM2BhSNX8_zMvqnMEbdzpxZThzZObuP285emXj9t97vY1rjdwgZrrH5RfI-UjHhhwL8WyC7zAl4Qg91AzGg">N次方慰勞祭 開獎</a>
+
+<p>
+
+<a href="https://event.line.me/event/proxy/Jm_wM2BhSNX8_zMvqnMEbdzpxZThzZObuP285emXj9t97vY1rjdwgZrrH5RfI-UjHhhwL8WyC7zAl4Qg91AzGg?redirectUrl=https%3A%2F%2Fevent.line.me%2Fcampaign%2F8b219638-0061-46b5-a559-60ef9aa5be0e%3Futm_source%3Dmgmpage%26utm_medium%3Dreceiver%26utm_campaign%3Dgiftshopmgm20221109&data=nEsH-Fs7kFcKEq7WO3WAnruM6kb8o3o-PROYPaVQfq6_uEutWzPM2njFwrpIgFIz-2z8MCENXv8VgChT6pPMQyVWJoNx4CZwHWlkGvCvNEdyWsuQVHRstFjDTCfo4hpRQ7vX7H15Fkw"></a>
+<a href="https://event.line.me/event/proxy/Jm_wM2BhSNX8_zMvqnMEbdzpxZThzZObuP285emXj9t97vY1rjdwgZrrH5RfI-UjHhhwL8WyC7zAl4Qg91AzGg?redirectUrl=https%3A%2F%2Fevent.line.me%2Fcampaign%2F8b219638-0061-46b5-a559-60ef9aa5be0e%3Futm_source%3Dmgmpage%26utm_medium%3Dreceiver%26utm_campaign%3Dgiftshopmgm20221109&data=igt4LlCg-ynGtxM-UpfgjHEzqvOyxSZisL8boWWUoiT0LUl4fREGeNnrRRslwSXsjdVHDAMDsjbQ-DW-n-dK2_J8q5TY6Bdvg0MHM7otk9NHa7S2T4uOp6Lgzf300zeUCZzQWnEQq1Q"></a>
+<a href="https://event.line.me/event/proxy/Jm_wM2BhSNX8_zMvqnMEbdzpxZThzZObuP285emXj9t97vY1rjdwgZrrH5RfI-UjHhhwL8WyC7zAl4Qg91AzGg?redirectUrl=https%3A%2F%2Fevent.line.me%2Fcampaign%2F8b219638-0061-46b5-a559-60ef9aa5be0e%3Futm_source%3Dmgmpage%26utm_medium%3Dreceiver%26utm_campaign%3Dgiftshopmgm20221109&data=AuQoi6sve8MQCEZbw3gcfcH2K-rTrSJjuUNgfyPiSsTOlw1CE69u27FkWs2L69_8rjzMyfuC44VF-mXFHaO2oYgvm9Q_SaP4yEHplHYmTWRbhEdaV_Mz42K85B11DahCoJ36GWYq7DY"></a>
+<a href="https://event.line.me/event/proxy/Jm_wM2BhSNX8_zMvqnMEbdzpxZThzZObuP285emXj9t97vY1rjdwgZrrH5RfI-UjHhhwL8WyC7zAl4Qg91AzGg?redirectUrl=https%3A%2F%2Fevent.line.me%2Fcampaign%2F8b219638-0061-46b5-a559-60ef9aa5be0e%3Futm_source%3Dmgmpage%26utm_medium%3Dreceiver%26utm_campaign%3Dgiftshopmgm20221109&data=wYhDaCGjKO6gWZjbIt6651_EJlGDXG43RUeNZKy2MdsB3mCY7-6oCgW9euSXjBEWxTuhkhXPAKhqTYgZ-yn6HF9egc428eaV5TH7iDg8_EzKr_iCMrBxLH-opKwXflZaaj-m5JocGH4"></a>
+<a href="https://event.line.me/event/proxy/Jm_wM2BhSNX8_zMvqnMEbdzpxZThzZObuP285emXj9t97vY1rjdwgZrrH5RfI-UjHhhwL8WyC7zAl4Qg91AzGg?redirectUrl=https%3A%2F%2Fevent.line.me%2Fcampaign%2F8b219638-0061-46b5-a559-60ef9aa5be0e%3Futm_source%3Dmgmpage%26utm_medium%3Dreceiver%26utm_campaign%3Dgiftshopmgm20221109&data=ZCZYdoXZ2Q2FfdYxODzzIzqxee9D6JO9l5L5r2Ptom10I10Hy6jYi0Klrim4i9L33cwbn3kpSzBxK9HXpXlQ7w3DJ58SxlaGBFd14str12inh9_Q7j1uAiOmy_-F6fViC6ulJiFz1c8"></a>
+<a href="https://event.line.me/event/proxy/Jm_wM2BhSNX8_zMvqnMEbdzpxZThzZObuP285emXj9t97vY1rjdwgZrrH5RfI-UjHhhwL8WyC7zAl4Qg91AzGg?redirectUrl=https%3A%2F%2Fevent.line.me%2Fcampaign%2F8b219638-0061-46b5-a559-60ef9aa5be0e%3Futm_source%3Dmgmpage%26utm_medium%3Dreceiver%26utm_campaign%3Dgiftshopmgm20221109&data=YX2p3gQPIk0__HVPPspGSmbDMKysk0gyRBV2zbNQPpeoQd7qdM5ponJWTl3tuyCgznf5Xjn8a4Dgure8JaimZmpoefhE_7wp9VyAtACx3qAX5HT5za-mGANeTZkdX6PjiEEoh_r7pyA"></a>
+<a href="https://event.line.me/event/proxy/Jm_wM2BhSNX8_zMvqnMEbdzpxZThzZObuP285emXj9t97vY1rjdwgZrrH5RfI-UjHhhwL8WyC7zAl4Qg91AzGg?redirectUrl=https%3A%2F%2Fevent.line.me%2Fcampaign%2F8b219638-0061-46b5-a559-60ef9aa5be0e%3Futm_source%3Dmgmpage%26utm_medium%3Dreceiver%26utm_campaign%3Dgiftshopmgm20221109&data=QHQ8bB_kO_ATkXH9nlHQcHPCRMCw8ldjrTxMHq1FV8ty-bMylZ42bUjDffjp2kci3jyxrDcevlSyGhldA7BdkLrGjBdUmiiS9Or-4-sHr1v-Tzfk7ULyQGGqq37KOiLdmV0gJRlgizU"></a>
+<a href="https://event.line.me/event/proxy/Jm_wM2BhSNX8_zMvqnMEbdzpxZThzZObuP285emXj9t97vY1rjdwgZrrH5RfI-UjHhhwL8WyC7zAl4Qg91AzGg?redirectUrl=https%3A%2F%2Fevent.line.me%2Fcampaign%2F8b219638-0061-46b5-a559-60ef9aa5be0e%3Futm_source%3Dmgmpage%26utm_medium%3Dreceiver%26utm_campaign%3Dgiftshopmgm20221109&data=vMpjU6vm1Ku54QZoGAEnT-psUEPkS9CL3Fjkdnr-9ERZR262_x2WuHq9Abl9yy9sv7-DNfdu1CYjIYmUsPnwGd97UCK8YMSWZwNIQ9vQ08QclrdMYq2PZC873GG-jUkQogWm1L98F9w"></a>
+<a href="https://event.line.me/event/proxy/Jm_wM2BhSNX8_zMvqnMEbdzpxZThzZObuP285emXj9t97vY1rjdwgZrrH5RfI-UjHhhwL8WyC7zAl4Qg91AzGg?redirectUrl=https%3A%2F%2Fevent.line.me%2Fcampaign%2F8b219638-0061-46b5-a559-60ef9aa5be0e%3Futm_source%3Dmgmpage%26utm_medium%3Dreceiver%26utm_campaign%3Dgiftshopmgm20221109&data=mydrOFHrkD9qmxEGrmWUn0CmP49QmJl2CAqiP_3qSRbzSwHAUUmzRPxDR5jJEx6ZO5WBisaB7gbAXT2IisMG83DQvpuC7LtAen-_T5at76U3fLhJ0HKM9kEyEwPG2cPgbChnwkZyOwE"></a>
+<a href="https://event.line.me/event/proxy/Jm_wM2BhSNX8_zMvqnMEbdzpxZThzZObuP285emXj9t97vY1rjdwgZrrH5RfI-UjHhhwL8WyC7zAl4Qg91AzGg?redirectUrl=https%3A%2F%2Fevent.line.me%2Fcampaign%2F8b219638-0061-46b5-a559-60ef9aa5be0e%3Futm_source%3Dmgmpage%26utm_medium%3Dreceiver%26utm_campaign%3Dgiftshopmgm20221109&data=XQcaZ3GJGS1otJMF6d0e4rIac4onPCYLD3SCvcviQYaoUtS8LT2AMN6nrjfZxElrU0n5VJrIU4mPhYxzrwL91u7SHLZFc2QuOsHcbWY_O5NlnO1vUzEYasLPjdnUYbC5Yx0ECuG3Hp0"></a>
+<a href="https://event.line.me/event/proxy/Jm_wM2BhSNX8_zMvqnMEbdzpxZThzZObuP285emXj9t97vY1rjdwgZrrH5RfI-UjHhhwL8WyC7zAl4Qg91AzGg?redirectUrl=https%3A%2F%2Fevent.line.me%2Fcampaign%2F8b219638-0061-46b5-a559-60ef9aa5be0e%3Futm_source%3Dmgmpage%26utm_medium%3Dreceiver%26utm_campaign%3Dgiftshopmgm20221109&data=ewtYtrFwRJFBL7s2bzb5qeI29netHE7So4VkFb4-dcI2GGalCxdjxk7d9jWmltne68aFyktEIYwp4rcEF4XpJVmWKTX2rSOcQRDHjJAm9Nos6EVDrT-6UMNNPEq2Nvw24ItRAUeaiEw"></a>
+<a href="https://event.line.me/event/proxy/Jm_wM2BhSNX8_zMvqnMEbdzpxZThzZObuP285emXj9t97vY1rjdwgZrrH5RfI-UjHhhwL8WyC7zAl4Qg91AzGg?redirectUrl=https%3A%2F%2Fevent.line.me%2Fcampaign%2F8b219638-0061-46b5-a559-60ef9aa5be0e%3Futm_source%3Dmgmpage%26utm_medium%3Dreceiver%26utm_campaign%3Dgiftshopmgm20221109&data=mCM0m7Ut9r0TwOnG7aB8K6BlYCDrhnjX8P5EKnLvmC0kW36fps2R_YPmmCrbZA2YdodMR_qt-qJ0DigkgVfZ6BU4hvPrNmhUb61b_jHjJz-WvQnkjfiBQlbILRyZbx4T80yRXszv7xs"></a>
+<a href="https://event.line.me/event/proxy/Jm_wM2BhSNX8_zMvqnMEbdzpxZThzZObuP285emXj9t97vY1rjdwgZrrH5RfI-UjHhhwL8WyC7zAl4Qg91AzGg?redirectUrl=https%3A%2F%2Fevent.line.me%2Fcampaign%2F8b219638-0061-46b5-a559-60ef9aa5be0e%3Futm_source%3Dmgmpage%26utm_medium%3Dreceiver%26utm_campaign%3Dgiftshopmgm20221109&data=aM2L1_66vXZsUpI95atvbtuTVvUQaYJDyr303rm1s0fwIFnWybaRwae82n1346LAjHD19rzf9FkYBYjjBEp7QXBi0QGwDMTWcCeFraUOmtYUrIn1WkRVfad2xH46BD4Gyxevpv3RGuU"></a>
+<a href="https://event.line.me/event/proxy/Jm_wM2BhSNX8_zMvqnMEbdzpxZThzZObuP285emXj9t97vY1rjdwgZrrH5RfI-UjHhhwL8WyC7zAl4Qg91AzGg?redirectUrl=https%3A%2F%2Fevent.line.me%2Fcampaign%2F8b219638-0061-46b5-a559-60ef9aa5be0e%3Futm_source%3Dmgmpage%26utm_medium%3Dreceiver%26utm_campaign%3Dgiftshopmgm20221109&data=o7bqrJF7teWUnDuHAXqGkzLA8Vi1HGhBQdUFGFYxSe1ZTBn8VprNvTXNy2NwSD9pxOfG9IhGAX9uLPOs1jwtcJQxI0m6vk8hNw31oVIHG877KMmRBulUw8popJeWXjj2RL0dnBHVWRI"></a>
+<a href="https://event.line.me/event/proxy/Jm_wM2BhSNX8_zMvqnMEbdzpxZThzZObuP285emXj9t97vY1rjdwgZrrH5RfI-UjHhhwL8WyC7zAl4Qg91AzGg?redirectUrl=https%3A%2F%2Fevent.line.me%2Fcampaign%2F8b219638-0061-46b5-a559-60ef9aa5be0e%3Futm_source%3Dmgmpage%26utm_medium%3Dreceiver%26utm_campaign%3Dgiftshopmgm20221109&data=h0iDQo118Cr9GpLKN6VFt5RWsjOebeyCkchH77SY2TwdP3AetI6JPGF9_zT-Wmk4yegx03A2-vJCgR_C5haSgRIDzNa4dAKdLaeDLbHv7VjJ6KcnUizBvFHQGh8XbcJWxRiQLN9ACTk"></a>
+
+</p>
