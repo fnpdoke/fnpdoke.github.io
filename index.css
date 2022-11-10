@@ -1,0 +1,12 @@
+p, b {
+    font-size: 20;
+    line-height: 1.5;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+b {
+    display: block;
+    text-align: right;
+}
