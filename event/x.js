@@ -8,6 +8,7 @@ async function p() {
     let len = list.length;
     let cnt = 1;
     for(let item of list) {
+        if (win.closed) break;
         win.location.href = item.getAttribute("href");
         await delay();
         cnt++;
