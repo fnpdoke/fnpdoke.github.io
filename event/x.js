@@ -14,7 +14,6 @@ async function p(e) {
         cnt++;
         if (cnt > len) {
             win.close();
-            alert('done');
         }
     }
 }
