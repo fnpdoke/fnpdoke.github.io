@@ -12,10 +12,7 @@ async function p(e) {
         win.location.href = item.getAttribute("href");
         await delay();
         cnt++;
-        if (cnt > len) {
-            win.close();
-            b();
-        }
+        if (cnt > len) win.close();
     }
 }
 
