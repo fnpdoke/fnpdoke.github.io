@@ -10,12 +10,14 @@
 
   <script>
     function openUrls() {
-      var textarea = document.getElementById('urls');
-      var urls = textarea.value.split('\n');
+      let textarea = document.getElementById('urls');
+      let urls = textarea.value.split('\n');
+      let pattern = /^https?:\/\/[^\s/$.?#].[^\s]*$/i;
     
       for (var url of urls) {
         url = url.trim();
-        if (url !== '') {
+        
+        if (url !== '' && pattern.test(url)) {
           window.open(url);
         }
       }
