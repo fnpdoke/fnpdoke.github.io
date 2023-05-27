@@ -2,6 +2,7 @@ p {
     counter-reset: num;
 }
 a {
+    display: block;
     font-size: 20;
 }
 p a[href^=http]::before {
