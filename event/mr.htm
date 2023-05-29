@@ -1,44 +1,21 @@
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link  rel="stylesheet" href="x.css"><script src="x.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></script>
 <input type="button" onclick="p(event)" value="OPEN">
-<p>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=1"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=11"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=1111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=11111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=1111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=11111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=1111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=11111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=1111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=11111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=1111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=11111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=111111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=1111111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=11111111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=111111111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=1111111111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=11111111111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=111111111111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=1111111111111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=11111111111111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=111111111111111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=1111111111111111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=11111111111111111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=111111111111111111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=1111111111111111111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=11111111111111111111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=111111111111111111111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=1111111111111111111111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=11111111111111111111111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=111111111111111111111111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=1111111111111111111111111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=11111111111111111111111111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=111111111111111111111111111111111111111"></a>
-<a ref="noopener noreferrer" target="_blank" href="https://www.bing.com/search?q=1111111111111111111111111111111111111111"></a>
-</p>
+
+<script>
+let delay = () => {
+    return new Promise((resolve, reject) => { setTimeout(resolve, 2500); });
+};
+
+async function p(e) {
+    const url = 'https://www.bing.com/';
+    const d = new Date().getDate() - 1;
+    const len = 40;
+
+    let win = window.open(url, 'p', 'width=100,height=100,left=' + e?.screenX + ',top=' + e?.screenY);
+    for(let i = 1; i <= len; i++) {
+        win.location.href = url + 'search?q=' + (d * len + i);
+        await delay();
+    }
+    win.close();
+}
+</script>
