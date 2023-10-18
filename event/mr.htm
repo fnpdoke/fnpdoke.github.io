@@ -1,6 +1,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></script>
-<input type="button" value="PC" onclick="p(event, 40)">
-<input type="button" value="MD" onclick="p(event, 25)">
+<style>
+@media screen and (orientation: portrait) {
+    .screen-op { display: initial; }
+    .screen-ol { display: none; }
+}
+@media screen and (orientation: landscape) {
+    .screen-op { display: none; }
+    .screen-ol { display: initial; }
+}
+</style>
+<input type="button" class="screen-ol" value="PC" onclick="p(event, 40)">
+<input type="button" class="screen-op" value="MD" onclick="p(event, 25)">
 
 <script>
 let delay = () => {
