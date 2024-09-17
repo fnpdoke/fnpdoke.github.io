@@ -1,5 +1,5 @@
 let delay = () => {
-    return new Promise((resolve, reject) => { setTimeout(resolve, 1000); });
+    return new Promise((resolve, reject) => { setTimeout(resolve, 2000); });
 }
 
 let p = () => {
