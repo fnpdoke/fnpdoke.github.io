@@ -7,7 +7,7 @@ let p = () => {
 }
 
 async function b(e) {
-    let win = window.open('', 'b', 'width=100,height=100,left=' + e?.screenX + ',top=' + e?.screenY);
+    let win = window.open('', 'b', 'width=800,height=600,left=' + e?.screenX + ',top=' + e?.screenY);
     let list = document.querySelectorAll('b a');
     let len = list.length;
     let cnt = 1;
