@@ -8,7 +8,7 @@ let b = (e) => {
     go(e, document.querySelectorAll('b a'));
 }
 async function go(e, list, addl) {
-    let win = window.open('', 'go', 'width=800,height=600,left=' + e?.screenX + ',top=' + e?.screenY);
+    let win = window.open('', 'go', 'width=400,height=300,left=' + e?.screenX + ',top=' + e?.screenY);
     let len = list.length;
     let cnt = 1;
     for(let item of list) {
