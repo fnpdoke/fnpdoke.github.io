@@ -1,5 +1,5 @@
 let delay = () => {
-    return new Promise((resolve, reject) => { setTimeout(resolve, 3000); });
+    return new Promise((resolve, reject) => { setTimeout(resolve, 4000); });
 }
 let p = (e) => {
     go(e, document.querySelectorAll('p a'), document.querySelectorAll('b a'));
