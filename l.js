@@ -2,7 +2,7 @@ let delay = () => {
     return new Promise((resolve, reject) => { setTimeout(resolve, 4000); });
 }
 let p = (e) => {
-    go(e, document.querySelectorAll('p a'), document.querySelectorAll('b a'));
+    go(e, document.querySelectorAll('p a:link'), document.querySelectorAll('b a'));
 }
 let b = (e) => {
     go(e, document.querySelectorAll('b a'));
