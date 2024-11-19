@@ -2,7 +2,7 @@ let delay = () => {
     return new Promise((resolve, reject) => { setTimeout(resolve, 4000); });
 }
 let p = (e) => {
-    go(e, document.querySelectorAll('p a:link'), document.querySelectorAll('b a'));
+    go(e, document.querySelectorAll('p a:not(.visited)'), document.querySelectorAll('b a'));
 }
 let b = (e) => {
     go(e, document.querySelectorAll('b a'));
@@ -13,6 +13,7 @@ async function go(e, list, addl) {
     let cnt = 1;
     for(let item of list) {
         if (win.closed) break;
+        item.classList.add('visited');
         win.location.href = item.getAttribute("href");
         await delay();
         cnt++;
