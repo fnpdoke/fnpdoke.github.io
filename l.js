@@ -16,7 +16,7 @@ function go(e, list) {
         if (a) win.push(a);
     }
 }
-function close() {
+function closeAll() {
     win.forEach(w => {
         if (w && !w.closed) w.close();
     });
