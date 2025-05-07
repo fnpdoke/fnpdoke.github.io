@@ -1,4 +1,5 @@
 let win = [];
+
 let p1 = (e) => {
     go(e, document.querySelectorAll('.p1 p a'));
 }
@@ -9,11 +10,15 @@ let b = (e) => {
     go(e, document.querySelectorAll('b a'));
 }
 function go(e, list) {
+    win = [];
     for(let item of list) {
         let a = window.open(item.getAttribute('href'));
-        win.push(a);
+        if (a) win.push(a);
     }
 }
 function close() {
-    win.forEach(w => w.close());
+    win.forEach(w => {
+        if (w && !w.closed) w.close();
+    });
+    win = [];
 }
